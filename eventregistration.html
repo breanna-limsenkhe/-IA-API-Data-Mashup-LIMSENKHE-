@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Event Registration</h1>
+</header>
+
+<div class="container">
+  <h2>Register Now</h2>
+  <form id="registrationForm">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email Address" required />
+    <select id="event">
+      <option value="Workshop">Creatives Workshop</option>
+      <option value="Seminar">Finance Seminar</option>
+      <option value="Conference">Leadership Conference</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+  <p id="message"></p>
+</div>
+
+<div class="container">
+  <h2>Workshop Dashboard</h2>
+  <p id="count">Loading...</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

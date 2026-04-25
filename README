@@ -1,0 +1,39 @@
+Breanna Limsenkhe 223688
+
+1. Project Description
+
+This project is an Event Registration Website that allows users to register for different events (Creative Workshop, Finance Seminar, Leadership Conference) and view live updates of attendee counts in one dashboard. The system stores registration data locally within the browser and updates the interface after each user submission. Data stays after each refresh and is deleted through accessing the local storage in the browser.
+
+I created this project as a ComTech student.
+
+2. APIs Used
+I used Fake Store API for this project, a public API from https://fakestoreapi.com/. I used this one because it was a simple and reccommended (by AI) public API.
+
+3. Setup Instructions
+In order to use this project the user must download or clone the project folder and simply run it locally through the 'eventregistration.html' file. For instant updates, the user may use the live server extension within VS Code to run it not as a file from the local desktop.
+
+4. Data Integration Explanation
+
+Data is integrated through user submission and the public API. Firstly, the user submits the registration form after inputting the data. This data is stored in localStorage under 'attendees' which ensures that data stays recorded even after a website refresh. After this, the public API is called using fetch() to demonstrate data integration through automatically displaying summarized data via the dashboard. 
+
+For example, when a user registers under the “Creative Workshop,” the system stores the data in the browser under 'attendees' and updates the dashboard to reflect the new total number of workshop participants. With every new submission, the storage and dashboard counts are updated.
+
+5. Known Limitations
+
+For limitations, the data is currently only stored in the browser, so it cannot sync across devices. The data cannot also be freely manipulated and needs to be manually cleared through browser developer tools (via inspect). Additionally, Fake Store API is used only for demo purposes and may not be a suitable long-term developments given the purpose of the website. Finally, the project currently lacks other features such as user profiles and authentication, event information, and confirmation details, all of which may assist effective event registration operations.
+
+6. AI Usage Disclosure
+
+AI tools (ChatGPT) were primarly used in this project for:
+
+Assisting in JavaScript structuring, debugging, and error fixing
+Looking for a public API
+Helping structure the project logic and data flow
+Improving code organization and readability
+
+Meanwhile, the following are the ones I did myself:
+
+HTML structure
+Website design (CSS) and Initial JavaScript structure
+Idea of the event registration system
+Final edits and Testing of the application
